@@ -7,14 +7,14 @@ public class RadioTest {
 
     @Test
     public void shouldUseRadio() {
-        radio.setCurrentChanel(4);
-        assertEquals(4, radio.getNumberOfChanel());
+        radio.setCurrentStation(4);
+        assertEquals(4, radio.getNumberOfStation());
     }
 
     @Test
     public void shouldUseRadio2() {
-        radio.setCurrentChanel(10);
-        assertEquals(0, radio.getNumberOfChanel());
+        radio.setCurrentStation(10);
+        assertEquals(0, radio.getNumberOfStation());
     }
 
     @Test
@@ -103,50 +103,50 @@ public class RadioTest {
 
     @Test
     public void testChanel() {
-        radio.setCurrentChanel(9);
+        radio.setCurrentStation(9);
         int expected = 9;
-        int actual = radio.getCurrentChanel();
+        int actual = radio.getCurrentStation();
         assertEquals(expected, actual);
     }
 
     @Test
     public void testChanel2() {
-        radio.setCurrentChanel(10);
+        radio.setCurrentStation(10);
         int expected = 0;
-        int actual = radio.getCurrentChanel();
+        int actual = radio.getCurrentStation();
         assertEquals(expected, actual);
     }
 
     @Test
     public void testChanel3() {
-        radio.setCurrentChanel(8);
+        radio.setCurrentStation(8);
         int expected = 8;
-        int actual = radio.getCurrentChanel();
+        int actual = radio.getCurrentStation();
         assertEquals(expected, actual);
     }
 
     @Test
     public void testChanel4() {
-        radio.setCurrentChanel(-1);
+        radio.setCurrentStation(-1);
         int expected = 0;
-        int actual = radio.getCurrentChanel();
+        int actual = radio.getCurrentStation();
         assertEquals(expected, actual);
     }
 
     @Test
     public void setToMaxChanel() {
-        radio.setCurrentChanel(9);
+        radio.setCurrentStation(9);
         int expected = 9;
-        int actual = radio.getCurrentChanel();
+        int actual = radio.getCurrentStation();
         assertEquals(expected, actual);
     }
 
 
     @Test
     public void setToMinChanel() {
-        radio.setCurrentChanel(0);
+        radio.setCurrentStation(0);
         int expected = 0;
-        int actual = radio.getCurrentChanel();
+        int actual = radio.getCurrentStation();
         assertEquals(expected, actual);
     }
 }
